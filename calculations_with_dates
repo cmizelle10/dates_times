@@ -1,0 +1,19 @@
+today = Sys.Date()
+
+day1 <- today - 18
+day2 <- today - 16
+day3 <- today - 11
+day4 <- today - 5
+day5 <- today
+
+# Difference between last and first pizza day
+print(day5 - day1)
+
+# Create vector pizza
+pizza <- c(day1, day2, day3, day4, day5)
+
+# Create differences between consecutive pizza days: day_diff
+day_diff <- diff(pizza)
+
+# Average period between two consecutive pizza days
+print(mean(day_diff))
